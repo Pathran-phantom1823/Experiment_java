@@ -21,13 +21,13 @@ public class Experiment1 {
             int option = input.nextInt();
             switch (option) {
                 case 1:
-                    listOption();
+                    arrListOpt();
                     break;
                 case 2:
-                    queueOption();
+                    pQueueOpt();
                     break;
                 case 3:
-                    setOption();
+                    tSetOpt();
                     break;
                 case 4:
                     break OUTER;
@@ -39,7 +39,7 @@ public class Experiment1 {
     }
     
 
-    public static void listOption() {
+    public static void arrListOpt() {
         ArrList list = new ArrList();
         OUTER:
         while (true) {
@@ -68,7 +68,7 @@ public class Experiment1 {
         }
     }
     
-    public static void setOption() {
+    public static void tSetOpt() {
         TSet set = new TSet();
         OUTER:
         while (true) {
@@ -97,7 +97,7 @@ public class Experiment1 {
         }
     }
     
-    public static void queueOption() {
+    public static void pQueueOpt() {
         PQueue que = new PQueue();
         OUTER:
         while (true) {
