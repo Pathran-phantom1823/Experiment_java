@@ -13,21 +13,21 @@ import java.util.Scanner;
  *
  * @author tiburilloma_sd2023
  */
-public class Queue {
+public class PQueue {
 
     private PriorityQueue<String> subjects = new PriorityQueue<String>();
 
     Scanner input = new Scanner(System.in);
 
     public void add() {
-        System.out.print("\nPlease input name of subject: ");
+        System.out.print("\nSubject Name: ");
         String subject = input.nextLine();
         subjects.add(subject);
-        System.out.println("NEW SUBJECT IS SUCCESSFULLY ADDED!\n");
+        System.out.println("SUBJECT IS SUCCESSFULLY ADDED!\n");
     }
 
     public void display() {
-        System.out.println("\n\tALL SUBJECTS:");
+        System.out.println("\n============LIST OF SUBJECTS=================");
         Iterator itr = subjects.iterator();
         while (itr.hasNext()) {
             System.out.println("\t" + itr.next());
@@ -38,10 +38,10 @@ public class Queue {
     public void update() {
         System.out.println("\nPriority subject: " + subjects.peek());
         subjects.poll();
-        System.out.print("edit: ");
+        System.out.print("Edit: ");
         String edit = input.nextLine();
         subjects.add(edit);
-        System.out.println("PRIORITY IS SUCCESSFULLY UPDATED!\n");
+        System.out.println("PRIORITY SUCCESSFULLY UPDATED!\n");
 
     }
     
@@ -58,9 +58,9 @@ public class Queue {
                     String name = input.nextLine();
                     if (subjects.contains(name)) {
                         subjects.remove(name);
-                        System.out.println("SUBJECT IS SUCCESSFULLY DELETED!\n");
+                        System.out.println("SUBJECT SUCCESSFULLY DELETED!\n");
                     } else {
-                        System.out.println("FOUND NO RESULT!\n");
+                        System.out.println("SUBJECT FOUND!\n");
                     }   
                     break;
                 case 2:

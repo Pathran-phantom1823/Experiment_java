@@ -49,7 +49,7 @@ public class Menu {
     
 
     public void listOption() {
-        List list = new List();
+        ArrList list = new ArrList();
         OUTER:
         while (true) {
             action();
@@ -78,7 +78,7 @@ public class Menu {
     }
     
     public void setOption() {
-        Set set = new Set();
+        TSet set = new TSet();
         OUTER:
         while (true) {
             action();
@@ -107,7 +107,7 @@ public class Menu {
     }
     
     public void queueOption() {
-        Queue que = new Queue();
+        PQueue que = new PQueue();
         OUTER:
         while (true) {
             action();
